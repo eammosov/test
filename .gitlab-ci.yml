@@ -32,7 +32,7 @@ deploy-dev:
     - lint-test-job
   when: manual
   script:
-    - echo "Deploying application damn...test................."
+    - echo "Deploying application damn...test....test............."
     - echo "Application successfully deployed."
 
 deploy-staging:     
