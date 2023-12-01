@@ -8,7 +8,7 @@ build-job:
   parallel: 3
   script:
     - env
-    - echo "Compiling the code..."
+    - echo "Compiling the code..." # damn
     - echo "Compile complete."
 
 unit-test-job:   
