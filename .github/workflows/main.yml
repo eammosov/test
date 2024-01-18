@@ -7,7 +7,10 @@ on:
 jobs:
   gitlab_push:
     runs-on: ubuntu-latest
+    env:
+      access_token: 'glpat-ktvR8xRFy8XDiJDKZfpd'
+      project_id: 2
     steps:
       - name: push
         run: |
-          ls
+          curl --request POST --header "PRIVATE-TOKEN: $access_token" "http://gitlab-runner-test1.site/api/v4/projects/$project_id/mirror/pull"
