@@ -4,12 +4,9 @@ on:
   push:
     branches: '**'
 
-concurrency:
-  group: gitlab_ci
-
 jobs:
   gitlab_push:
-    runs-on: alpine
+    runs-on: ubuntu-latest
     steps:
       - name: push
         run: |
